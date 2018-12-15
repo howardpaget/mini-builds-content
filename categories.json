@@ -1,0 +1,8 @@
+{
+  "categories": [
+    { "name": "ASP.NET", "slug": "asp-net", "colour": "#b8860b" },
+    { "name": "Arduino", "slug": "arduino", "colour": "#ff5733" },
+    { "name": "Raspberry Pi", "slug": "raspberry-pi", "colour": "#5dade2" },
+    { "name": "Unity", "slug": "unity", "colour": "#58d68d" }
+  ]
+}
