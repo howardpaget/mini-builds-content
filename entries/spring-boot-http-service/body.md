@@ -113,7 +113,7 @@ Spring Boot serves files in the directory `resources/static`. For the clicker ap
 
 The Spring Boot Gradle plugin provides the `bootRun` task which is used to run Spring Boot applications.
 
-```
+```batch
 gradlew bootRun
 ```
 
@@ -125,7 +125,7 @@ The usual `gradlew build` task can be used to build an uber jar. Gradle will put
 
 Just for fun lets wrap this application in a Docker container and run it. Below is a Dockerfile that will create a image that will have the Java runtime setup, contain the Spring Boot clicker jar, and run it on start up.
 
-```
+```docker
 FROM openjdk:8-jdk-alpine
 ADD build/libs/clicker-0.1.0-SNAPSHOT.jar /
 ENTRYPOINT ["java", "-jar", "/clicker-0.1.0-SNAPSHOT.jar"]
@@ -133,13 +133,13 @@ ENTRYPOINT ["java", "-jar", "/clicker-0.1.0-SNAPSHOT.jar"]
 
 With the Dockerfile in a directory called docker and the project built using `gradlew build` running `docker build` will create an image called clicker.
 
-```
+```batch
 docker build -t clicker -f docker/Dockerfile .
 ```
 
 `docker run` is used to run the clicker image. The `-p` argument is used to map the port 8080 from inside the container to outside. 
 
-```
+```batch
 docker run -p 8080:8080 clicker
 ```
 

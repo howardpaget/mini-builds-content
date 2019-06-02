@@ -3,5 +3,6 @@
     "id": "spring-boot-web-service",
     "snippet": "Build a simple service using Spring Boot",
     "category": "java",
+    "colour": "#c377e0",
     "date": "2019-05-23"
 }

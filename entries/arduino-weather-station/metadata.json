@@ -3,5 +3,6 @@
     "id": "arduino-weather-station",
     "snippet": "Build a simple weather station using Arduino",
     "category": "arduino",
+    "colour": "#f2d600",
     "date": "2019-03-05"
 }
